@@ -1,0 +1,25 @@
+.filmData-container {
+    display: grid;
+    justify-items: center;
+    width: 270px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: auto;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: 7px solid #efefef;
+    text-align: center;
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        width: 90%;
+    }
+}

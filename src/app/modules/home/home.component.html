@@ -1,0 +1,17 @@
+<div class="main-title">
+    <h1>Blockbuster</h1>
+</div>
+<div *ngIf="films">
+    <div class="carousel-container">
+        <div class="sub-title">
+            <h3> Filmes em cartaz </h3>
+        </div>
+        <owl-carousel-o style="margin: 0 auto;" [options]="customOptions">
+            <ng-container *ngFor="let film of films">
+                <ng-template carouselSlide>
+                    <app-film-poster [filmData]="film"></app-film-poster>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>
